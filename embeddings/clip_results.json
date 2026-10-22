@@ -1,0 +1,20 @@
+{
+  "model": "openai/clip-vit-large-patch14",
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.1",
+    "diffusers": "0.41.0",
+    "cuda_available": true,
+    "gpu": "Tesla T4"
+  },
+  "sample_size": 500,
+  "mean_cos_matched": 0.2714274227619171,
+  "mean_cos_mismatched": 0.09694360941648483,
+  "text_to_image_R@1": 78.4,
+  "text_to_image_R@5": 95.39999999999999,
+  "text_to_image_R@10": 98.0,
+  "image_to_text_R@1": 78.8,
+  "image_to_text_R@5": 96.0,
+  "random_chance_R@1": 0.2
+}

@@ -1,0 +1,50 @@
+{
+  "dataset": "lmms-lab-encoder/flickr30k",
+  "seed": 42,
+  "target_pairs": 2000,
+  "image_size": 512,
+  "min_side": 256,
+  "max_aspect": 2.0,
+  "caption_words": [
+    6,
+    30
+  ],
+  "target_words": 15,
+  "near_duplicate_hash_distance": 4,
+  "blocklist": [
+    "blood",
+    "bloody",
+    "corpse",
+    "gun",
+    "guns",
+    "kill",
+    "killing",
+    "naked",
+    "nude",
+    "pistol",
+    "rifle",
+    "sexy",
+    "topless",
+    "weapon",
+    "weapons"
+  ],
+  "funnel": {
+    "rows_seen": 2031,
+    "kept": 2000,
+    "dropped: image too_small": 30,
+    "dropped: no valid caption": 1
+  },
+  "caption_check_counts": {
+    "ok": 9526,
+    "too_short": 378,
+    "too_long": 65,
+    "content_filter": 34,
+    "non_alpha": 1,
+    "uncertain": 6
+  },
+  "split_counts": {
+    "train": 1600,
+    "val": 200,
+    "test": 200
+  }
+}

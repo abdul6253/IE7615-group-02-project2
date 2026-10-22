@@ -1,0 +1,21 @@
+# Dataset images: Flickr30k is non-commercial research use only, not redistributed.
+# Rebuild them with notebooks/01_dataset_preparation.ipynb.
+data/flickr30k_subset/images/
+
+# Zip archives made by the notebooks
+*.zip
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Model caches
+.cache/
+huggingface/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,31 @@
+{
+  "sd_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "clip_model": "openai/clip-vit-large-patch14",
+  "steps": 30,
+  "guidance_scale": 7.5,
+  "seed": 42,
+  "n_prompts": 15,
+  "scheduler": "PNDMScheduler",
+  "mean_clip_generated": 26.98000144958496,
+  "mean_clip_groundtruth": 24.360002517700195,
+  "mean_img_similarity": 71.9000015258789,
+  "mean_seconds_per_image": 4.88,
+  "safety_flagged": 0,
+  "diversity": [
+    {
+      "id": 0,
+      "caption": "A tan dog running through the grass with the background blurry",
+      "mean_pairwise_img_sim": 93.0
+    },
+    {
+      "id": 1,
+      "caption": "A dog with golden fur is chest deep in water",
+      "mean_pairwise_img_sim": 88.1
+    },
+    {
+      "id": 2,
+      "caption": "A man in a number ten jersey kicks a soccer ball while another team member watches",
+      "mean_pairwise_img_sim": 81.8
+    }
+  ]
+}

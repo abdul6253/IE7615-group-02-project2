@@ -1,0 +1,16 @@
+id,domain,caption,gt_file,gen_file,seed,seconds,safety_flagged,clip_generated,clip_groundtruth,img_similarity
+0,animals,A tan dog running through the grass with the background blurry,3148647065.jpg,gen_00.png,42,7.2,False,26.6,22.8,86.3
+1,animals,A dog with golden fur is chest deep in water,343073813.jpg,gen_01.png,43,4.4,False,29.6,21.7,79.2
+2,sports,A man in a number ten jersey kicks a soccer ball while another team member watches,3050650135.jpg,gen_02.png,44,4.4,False,25.8,22.5,69.4
+3,sports,A person jumping their bike in the woods in front of trees with no leaves,3374384485.jpg,gen_03.png,45,4.4,False,25.8,23.9,76.2
+4,water / beach,Men and women in bathing suits are standing at poolside while another swimmer is in the water,313251305.jpg,gen_04.png,46,4.4,False,25.1,24.6,70.3
+5,water / beach,Boy heads into water big tents and hills in background in rural area,3181322965.jpg,gen_05.png,47,4.5,False,22.7,25.1,69.7
+6,city / street,Five people on bikes in traffic with man watching from the side of the road,3330654550.jpg,gen_06.png,48,4.5,False,24.1,23.7,73.9
+7,city / street,People are walking on the slippery road in winter and there are two dogs: black and yellow,3309535518.jpg,gen_07.png,49,4.5,False,27.3,20.6,55.7
+8,nature,A couple and their child pose for a picture in front of a Christmas tree,3169163556.jpg,gen_08.png,50,4.5,False,27.1,25.6,69.9
+9,nature,Three dogs who are brown white and black ( respectively ) play with one another in a dirt field,3250076419.jpg,gen_09.png,51,4.6,False,26.0,26.3,79.3
+10,indoor,Party goers at a rave dancing by a table with glow sticks on it,3086387529.jpg,gen_10.png,52,4.6,False,30.8,20.8,53.8
+11,indoor,Three women and a man sitting at a table with a large pitcher of beer,3158097394.jpg,gen_11.png,53,4.6,False,30.2,24.6,80.7
+12,people,A group of people ride a blue roller coaster on its way down from a turn,3051341320.jpg,gen_12.png,54,4.6,False,31.3,29.1,87.0
+13,people,A group of six children stands smiling and laughing in front of a wall,3242718240.jpg,gen_13.png,55,5.8,False,23.7,27.0,73.9
+14,other,One man in the back of a truck working on a farm with animals in the background,3342450499.jpg,gen_14.png,56,6.2,False,28.6,27.1,53.2

@@ -12,6 +12,7 @@ A text-to-image pipeline that turns a caption into a 512×512 image: a Transform
 | Project proposal | `docs/Project2_Proposal.pdf` |
 | Dataset memo | `docs/Project2_Dataset_Memo.pdf` |
 | Baseline gallery and memo | `docs/Project2_Baseline_Gallery_Memo.pdf`, `baseline_gallery/` |
+| Baseline evaluation review | `docs/m1_baseline_evaluation_review.md` |
 | Dataset-preparation notebook | `notebooks/01_dataset_preparation.ipynb` |
 | CLIP / text-embedding notebook | `notebooks/02_clip_embeddings.ipynb` |
 | Baseline Stable Diffusion notebook | `notebooks/03_baseline_sd_generation.ipynb` |
@@ -85,5 +86,5 @@ Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in t
 |---|---|---|
 | Abdellah Faleh | Technical lead | Built the three notebooks (data, CLIP, first images), ran them in Colab, and wrote the proposal, dataset memo, gallery memo and report; connects the text encoder in Milestone 2 |
 | Jin-Woo Hong | Experiments | Leads the guidance scale, scheduler and step-count tests in Milestones 2 and 3 |
-| Samuel Tong | Evaluation | Leads the FID, Inception Score and CLIP score evaluation and the result charts in Milestone 3 |
+| Samuel Tong | Evaluation | Reran notebooks 02 and 03 in Colab to check they reproduce, and wrote the Milestone 1 evaluation review (`docs/m1_baseline_evaluation_review.md`); leads FID, Inception Score and CLIP score evaluation in Milestone 3 |
 | Tristan Lyons | Documentation | Keeps the GitHub repository organized, submits on Canvas, and is the main contact with the teaching staff |

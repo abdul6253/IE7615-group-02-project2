@@ -53,3 +53,20 @@ visually different across prompts. However, the model still struggled with more 
 scenes containing multiple people, animals, vehicles, or specific objects. These
 results suggest that the baseline captures the general meaning of many captions, but
 detailed prompt adherence and realistic human features remain important limitations.
+
+## Recommendation
+
+Overall, the baseline is solid and reproducible enough to proceed to the next milestones.
+The model successfully captures the general content of many captions, the notebooks can be
+rerun consistently, and the outputs align with the expected Milestone 1 workflow. The
+issues observed are not signs of a broken pipeline; rather, they reflect the known
+challenges of text-to-image generation for complex scenes and human anatomy.
+
+The main recommendation is to keep the current baseline as a valid starting point, while
+prioritizing improvements in three areas for Milestone 2 and 3: prompt fidelity for
+multiple-entity scenes, improved realism of faces and hands, and stronger control over
+specific objects and counts. In practice, this means tuning sampling settings such as
+guidance scale, scheduler choice, and step count, while also evaluating generation quality
+with CLIP, FID, and human inspection. With these targeted refinements, the project should
+be able to move beyond a general baseline toward a more reliable and visually consistent
+text-to-image model.

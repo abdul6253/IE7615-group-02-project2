@@ -85,6 +85,6 @@ Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in t
 | Member | Role | Contribution and responsibility |
 |---|---|---|
 | Abdellah Faleh | Technical lead | Built the three notebooks (data, CLIP, first images), ran them in Colab, and wrote the proposal, dataset memo, gallery memo and report; connects the text encoder in Milestone 2 |
-| Jin-Woo Hong | Experiments | Leads the guidance scale, scheduler and step-count tests in Milestones 2 and 3 |
+| Jin-Woo Hong | Experiments | Reran the notebooks to check the baseline and added the recommendation to the evaluation review; leads the guidance scale, scheduler and step-count tests in Milestones 2 and 3 |
 | Samuel Tong | Evaluation | Reran notebooks 02 and 03 in Colab to check they reproduce, and wrote the Milestone 1 evaluation review (`docs/m1_baseline_evaluation_review.md`); leads FID, Inception Score and CLIP score evaluation in Milestone 3 |
 | Tristan Lyons | Documentation | Keeps the GitHub repository organized, submits on Canvas, and is the main contact with the teaching staff |

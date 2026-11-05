@@ -15,6 +15,7 @@ venv/
 # Model caches
 .cache/
 huggingface/
+models/
 
 # OS files
 .DS_Store

@@ -22,7 +22,7 @@ A text-to-image pipeline that turns a caption into a 512×512 image: a Transform
 | Deliverable | Where |
 |---|---|
 | Stable Diffusion LoRA fine-tuning notebook | `notebooks/04_sd_lora_finetuning.ipynb` |
-| LoRA training loop | `scripts/train_sd_lora.py` |
+| LoRA training loop and prompt-conditioning evaluation | `scripts/train_sd_lora.py`, `scripts/evaluate_sd_conditioning.py` |
 | Text-to-image integration architecture | `docs/m2_integration_architecture.md` |
 
 ## Milestone 1 results
@@ -88,7 +88,7 @@ Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in t
 
 Notebook 03 explicitly encodes each prompt into the 77-token hidden-state sequence expected by Stable Diffusion's U-Net and supplies it as `prompt_embeds`; the empty-prompt sequence is supplied as `negative_prompt_embeds` for classifier-free guidance. The pooled CLIP vectors saved by notebook 02 are for retrieval and scoring, not diffusion conditioning.
 
-Notebook 04 fine-tunes rank-8 LoRA adapters on the Stable Diffusion U-Net attention projections, using only the Flickr30k training split. The pretrained CLIP text encoder, VAE, and base U-Net weights stay frozen. It saves the adapter and run metadata under `models/` (ignored by Git) and generates a validation-prompt preview. Run notebook 03 first to preserve the unchanged pretrained baseline. See [the Milestone 2 integration architecture](docs/m2_integration_architecture.md) for the text-to-image flow, training objective, and component boundaries.
+Notebook 04 fine-tunes rank-8 LoRA adapters on the Stable Diffusion U-Net attention projections, using only the Flickr30k training split. The pretrained CLIP text encoder, VAE, and base U-Net weights stay frozen. It saves the adapter and run metadata under `models/` (ignored by Git), generates a validation-prompt preview, and compares fixed held-out captions under pretrained, LoRA-conditioned, and empty-prompt control generation. CLIP matching/mismatched-caption scores and a review grid help check whether prompt conditioning is active. Run notebook 03 first to preserve the unchanged pretrained baseline. See [the Milestone 2 integration architecture](docs/m2_integration_architecture.md) for the text-to-image flow, training objective, and component boundaries.
 
 ## Data and model sources
 

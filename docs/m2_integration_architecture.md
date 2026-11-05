@@ -39,6 +39,17 @@ At inference, load the saved adapter into the same pretrained Stable Diffusion p
 The existing baseline notebook remains unchanged, so baseline and fine-tuned generations
 can be compared using the same model family, prompts, seeds, and evaluation.
 
+### Verifying that text conditioning is active
+
+The fine-tuning notebook's final evaluation uses a fixed, seeded sample of validation
+captions. It generates images with the pretrained model and correct captions, with the
+LoRA adapter and correct captions, and with the LoRA adapter but empty prompts. Each
+caption uses the same initial noise seed across conditions. CLIP reports matching-caption
+similarity, cyclically mismatched-caption similarity, and top-1 retrieval across the
+caption set. The saved comparison grid supports human review. Higher matching scores for
+caption-conditioned images than for the empty-prompt control are evidence that generation
+uses the text condition; CLIP and a small sample do not guarantee exact counts or attributes.
+
 ## Reproduction and data boundaries
 
 Run `notebooks/01_dataset_preparation.ipynb` first so that

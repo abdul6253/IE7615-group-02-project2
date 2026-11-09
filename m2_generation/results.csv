@@ -1,0 +1,203 @@
+part,prompt_id,prompt,seed,sampler,steps,guidance,schedule,seconds,peak_gpu_gb,safety_flagged,clip_score,saturation,file
+A_baseline,0,A tan dog running through the grass with the background blurry,42,PNDM,30,7.5,scaled_linear,4.44,4.29,False,26.63,58.4,images/baseline/base_00_seed42.jpg
+A_baseline,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,7.5,scaled_linear,4.48,4.29,False,27.52,48.3,images/baseline/base_00_seed1042.jpg
+A_baseline,1,A dog with golden fur is chest deep in water,43,PNDM,30,7.5,scaled_linear,4.52,4.29,False,29.64,40.0,images/baseline/base_01_seed43.jpg
+A_baseline,1,A dog with golden fur is chest deep in water,1043,PNDM,30,7.5,scaled_linear,4.56,4.29,False,31.79,45.1,images/baseline/base_01_seed1043.jpg
+A_baseline,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,7.5,scaled_linear,4.6,4.29,False,25.81,36.2,images/baseline/base_02_seed44.jpg
+A_baseline,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,7.5,scaled_linear,4.61,4.29,False,23.76,57.4,images/baseline/base_02_seed1044.jpg
+A_baseline,3,A person jumping their bike in the woods in front of trees with no leaves,45,PNDM,30,7.5,scaled_linear,4.64,4.29,False,25.78,42.8,images/baseline/base_03_seed45.jpg
+A_baseline,3,A person jumping their bike in the woods in front of trees with no leaves,1045,PNDM,30,7.5,scaled_linear,4.69,4.29,False,24.38,22.4,images/baseline/base_03_seed1045.jpg
+A_baseline,4,Men and women in bathing suits are standing at poolside while another swimmer is in the water,46,PNDM,30,7.5,scaled_linear,4.72,4.29,False,25.08,27.8,images/baseline/base_04_seed46.jpg
+A_baseline,4,Men and women in bathing suits are standing at poolside while another swimmer is in the water,1046,PNDM,30,7.5,scaled_linear,4.73,4.29,False,27.48,3.8,images/baseline/base_04_seed1046.jpg
+A_baseline,5,Boy heads into water big tents and hills in background in rural area,47,PNDM,30,7.5,scaled_linear,4.77,4.29,False,22.67,39.6,images/baseline/base_05_seed47.jpg
+A_baseline,5,Boy heads into water big tents and hills in background in rural area,1047,PNDM,30,7.5,scaled_linear,4.8,4.29,False,26.37,34.1,images/baseline/base_05_seed1047.jpg
+A_baseline,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,7.5,scaled_linear,4.86,4.29,False,24.11,15.8,images/baseline/base_06_seed48.jpg
+A_baseline,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,7.5,scaled_linear,4.91,4.29,False,25.0,30.7,images/baseline/base_06_seed1048.jpg
+A_baseline,7,People are walking on the slippery road in winter and there are two dogs: black and yellow,49,PNDM,30,7.5,scaled_linear,4.94,4.29,False,27.28,20.0,images/baseline/base_07_seed49.jpg
+A_baseline,7,People are walking on the slippery road in winter and there are two dogs: black and yellow,1049,PNDM,30,7.5,scaled_linear,4.98,4.29,False,31.48,19.6,images/baseline/base_07_seed1049.jpg
+A_baseline,8,A couple and their child pose for a picture in front of a Christmas tree,50,PNDM,30,7.5,scaled_linear,5.02,4.29,False,27.11,32.5,images/baseline/base_08_seed50.jpg
+A_baseline,8,A couple and their child pose for a picture in front of a Christmas tree,1050,PNDM,30,7.5,scaled_linear,5.1,4.29,False,24.27,31.5,images/baseline/base_08_seed1050.jpg
+A_baseline,9,Three dogs who are brown white and black ( respectively ) play with one another in a dirt field,51,PNDM,30,7.5,scaled_linear,5.17,4.29,False,26.03,25.7,images/baseline/base_09_seed51.jpg
+A_baseline,9,Three dogs who are brown white and black ( respectively ) play with one another in a dirt field,1051,PNDM,30,7.5,scaled_linear,5.22,4.29,False,27.6,28.0,images/baseline/base_09_seed1051.jpg
+A_baseline,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,7.5,scaled_linear,5.25,4.29,False,30.8,57.1,images/baseline/base_10_seed52.jpg
+A_baseline,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,7.5,scaled_linear,5.24,4.29,False,27.88,72.5,images/baseline/base_10_seed1052.jpg
+A_baseline,11,Three women and a man sitting at a table with a large pitcher of beer,53,PNDM,30,7.5,scaled_linear,5.28,4.29,False,30.15,50.9,images/baseline/base_11_seed53.jpg
+A_baseline,11,Three women and a man sitting at a table with a large pitcher of beer,1053,PNDM,30,7.5,scaled_linear,5.29,4.29,False,29.9,33.1,images/baseline/base_11_seed1053.jpg
+A_baseline,12,A group of people ride a blue roller coaster on its way down from a turn,54,PNDM,30,7.5,scaled_linear,5.38,4.29,False,31.29,51.0,images/baseline/base_12_seed54.jpg
+A_baseline,12,A group of people ride a blue roller coaster on its way down from a turn,1054,PNDM,30,7.5,scaled_linear,5.46,4.29,False,30.47,55.0,images/baseline/base_12_seed1054.jpg
+A_baseline,13,A group of six children stands smiling and laughing in front of a wall,55,PNDM,30,7.5,scaled_linear,5.54,4.29,False,23.69,47.8,images/baseline/base_13_seed55.jpg
+A_baseline,13,A group of six children stands smiling and laughing in front of a wall,1055,PNDM,30,7.5,scaled_linear,5.6,4.29,False,27.49,40.0,images/baseline/base_13_seed1055.jpg
+A_baseline,14,One man in the back of a truck working on a farm with animals in the background,56,PNDM,30,7.5,scaled_linear,5.68,4.29,False,28.54,35.5,images/baseline/base_14_seed56.jpg
+A_baseline,14,One man in the back of a truck working on a farm with animals in the background,1056,PNDM,30,7.5,scaled_linear,5.75,4.29,False,29.86,43.5,images/baseline/base_14_seed1056.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,1.0,scaled_linear,3.66,4.29,False,23.84,40.5,images/guidance/gs1_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,1.0,scaled_linear,3.4,4.29,False,25.83,28.1,images/guidance/gs1_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,1.0,scaled_linear,3.41,4.29,False,18.67,18.4,images/guidance/gs1_00_seed2042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,3.0,scaled_linear,5.77,4.29,False,24.42,47.4,images/guidance/gs3_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,3.0,scaled_linear,5.87,4.29,False,26.58,34.8,images/guidance/gs3_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,3.0,scaled_linear,5.91,4.29,False,24.78,20.6,images/guidance/gs3_00_seed2042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,5.0,scaled_linear,5.85,4.29,False,25.35,52.6,images/guidance/gs5_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,5.0,scaled_linear,5.73,4.29,False,26.84,40.9,images/guidance/gs5_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,5.0,scaled_linear,5.67,4.29,False,23.1,30.2,images/guidance/gs5_00_seed2042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,7.5,scaled_linear,5.63,4.29,False,26.63,58.4,images/guidance/gs7.5_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,7.5,scaled_linear,5.59,4.29,False,27.52,48.3,images/guidance/gs7.5_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,7.5,scaled_linear,5.57,4.29,False,23.87,38.0,images/guidance/gs7.5_00_seed2042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,10.0,scaled_linear,5.59,4.29,False,26.23,65.4,images/guidance/gs10_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,10.0,scaled_linear,5.6,4.29,False,27.39,51.1,images/guidance/gs10_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,10.0,scaled_linear,5.65,4.29,False,23.77,47.6,images/guidance/gs10_00_seed2042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,42,PNDM,30,15.0,scaled_linear,5.65,4.29,False,27.77,68.8,images/guidance/gs15_00_seed42.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,1042,PNDM,30,15.0,scaled_linear,5.69,4.29,False,28.83,59.4,images/guidance/gs15_00_seed1042.jpg
+B_guidance,0,A tan dog running through the grass with the background blurry,2042,PNDM,30,15.0,scaled_linear,5.72,4.29,False,25.18,61.1,images/guidance/gs15_00_seed2042.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,1.0,scaled_linear,3.45,4.29,False,26.42,21.6,images/guidance/gs1_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,1.0,scaled_linear,3.46,4.29,False,18.15,52.1,images/guidance/gs1_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,1.0,scaled_linear,3.44,4.29,False,18.27,39.9,images/guidance/gs1_02_seed2044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,3.0,scaled_linear,5.7,4.29,False,26.11,24.6,images/guidance/gs3_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,3.0,scaled_linear,5.69,4.29,False,23.77,46.7,images/guidance/gs3_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,3.0,scaled_linear,5.67,4.29,False,21.29,43.4,images/guidance/gs3_02_seed2044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,5.0,scaled_linear,5.67,4.29,False,25.16,29.1,images/guidance/gs5_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,5.0,scaled_linear,5.67,4.29,False,27.55,54.1,images/guidance/gs5_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,5.0,scaled_linear,5.67,4.29,False,22.54,46.3,images/guidance/gs5_02_seed2044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,7.5,scaled_linear,5.64,4.29,False,25.81,36.2,images/guidance/gs7.5_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,7.5,scaled_linear,5.65,4.29,False,23.76,57.4,images/guidance/gs7.5_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,7.5,scaled_linear,5.64,4.29,False,20.91,47.0,images/guidance/gs7.5_02_seed2044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,10.0,scaled_linear,5.62,4.29,False,24.43,34.3,images/guidance/gs10_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,10.0,scaled_linear,5.62,4.29,False,23.94,63.4,images/guidance/gs10_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,10.0,scaled_linear,5.62,4.29,False,21.1,49.7,images/guidance/gs10_02_seed2044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,15.0,scaled_linear,5.61,4.29,False,22.47,47.2,images/guidance/gs15_02_seed44.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,1044,PNDM,30,15.0,scaled_linear,5.61,4.29,False,25.04,69.0,images/guidance/gs15_02_seed1044.jpg
+B_guidance,2,A man in a number ten jersey kicks a soccer ball while another team member watches,2044,PNDM,30,15.0,scaled_linear,5.6,4.29,False,20.36,50.7,images/guidance/gs15_02_seed2044.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,1.0,scaled_linear,3.39,4.29,False,21.64,12.8,images/guidance/gs1_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,1.0,scaled_linear,3.38,4.29,False,18.04,28.1,images/guidance/gs1_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,1.0,scaled_linear,3.39,4.29,False,22.47,17.2,images/guidance/gs1_06_seed2048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,3.0,scaled_linear,5.62,4.29,False,22.36,12.3,images/guidance/gs3_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,3.0,scaled_linear,5.63,4.29,False,21.86,20.9,images/guidance/gs3_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,3.0,scaled_linear,5.63,4.29,False,23.12,15.6,images/guidance/gs3_06_seed2048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,5.0,scaled_linear,5.64,4.29,False,24.16,13.5,images/guidance/gs5_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,5.0,scaled_linear,5.65,4.29,False,23.94,16.6,images/guidance/gs5_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,5.0,scaled_linear,5.65,4.29,False,25.72,17.7,images/guidance/gs5_06_seed2048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,7.5,scaled_linear,5.66,4.29,False,24.11,15.8,images/guidance/gs7.5_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,7.5,scaled_linear,5.65,4.29,False,25.0,30.7,images/guidance/gs7.5_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,7.5,scaled_linear,5.63,4.29,False,26.47,23.0,images/guidance/gs7.5_06_seed2048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,10.0,scaled_linear,5.63,4.29,False,23.1,23.0,images/guidance/gs10_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,10.0,scaled_linear,5.64,4.29,False,23.41,32.7,images/guidance/gs10_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,10.0,scaled_linear,5.64,4.29,False,27.98,27.8,images/guidance/gs10_06_seed2048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,15.0,scaled_linear,5.62,4.29,False,24.48,41.2,images/guidance/gs15_06_seed48.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,1048,PNDM,30,15.0,scaled_linear,5.62,4.29,False,26.37,37.3,images/guidance/gs15_06_seed1048.jpg
+B_guidance,6,Five people on bikes in traffic with man watching from the side of the road,2048,PNDM,30,15.0,scaled_linear,5.64,4.29,False,27.4,32.1,images/guidance/gs15_06_seed2048.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,1.0,scaled_linear,3.39,4.29,False,15.38,29.4,images/guidance/gs1_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,1.0,scaled_linear,3.4,4.29,False,19.35,39.3,images/guidance/gs1_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,1.0,scaled_linear,3.39,4.29,False,21.29,40.8,images/guidance/gs1_10_seed2052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,3.0,scaled_linear,5.63,4.29,False,28.16,41.8,images/guidance/gs3_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,3.0,scaled_linear,5.64,4.29,False,27.97,49.0,images/guidance/gs3_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,3.0,scaled_linear,5.65,4.29,False,27.54,53.6,images/guidance/gs3_10_seed2052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,5.0,scaled_linear,5.66,4.29,False,29.06,52.9,images/guidance/gs5_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,5.0,scaled_linear,5.64,4.29,False,29.23,61.4,images/guidance/gs5_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,5.0,scaled_linear,5.66,4.29,False,27.18,63.4,images/guidance/gs5_10_seed2052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,7.5,scaled_linear,5.66,4.29,False,30.8,57.1,images/guidance/gs7.5_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,7.5,scaled_linear,5.67,4.29,False,27.88,72.5,images/guidance/gs7.5_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,7.5,scaled_linear,5.65,4.29,False,28.93,72.3,images/guidance/gs7.5_10_seed2052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,10.0,scaled_linear,5.68,4.29,False,29.95,59.0,images/guidance/gs10_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,10.0,scaled_linear,5.67,4.29,False,27.66,77.2,images/guidance/gs10_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,10.0,scaled_linear,5.66,4.29,False,28.66,78.0,images/guidance/gs10_10_seed2052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,15.0,scaled_linear,5.68,4.29,False,27.98,58.0,images/guidance/gs15_10_seed52.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,1052,PNDM,30,15.0,scaled_linear,5.69,4.29,False,27.93,82.9,images/guidance/gs15_10_seed1052.jpg
+B_guidance,10,Party goers at a rave dancing by a table with glow sticks on it,2052,PNDM,30,15.0,scaled_linear,5.68,4.29,False,26.62,82.4,images/guidance/gs15_10_seed2052.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDPM,10,7.5,scaled_linear,2.0,4.29,False,33.53,64.3,images/sampler/DDPM_10_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDPM,10,7.5,scaled_linear,1.96,4.29,False,22.7,29.8,images/sampler/DDPM_10_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDPM,10,7.5,scaled_linear,1.98,4.29,False,24.34,18.8,images/sampler/DDPM_10_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDPM,10,7.5,scaled_linear,1.98,4.29,False,28.93,63.9,images/sampler/DDPM_10_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDPM,20,7.5,scaled_linear,3.75,4.29,False,28.28,65.2,images/sampler/DDPM_20_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDPM,20,7.5,scaled_linear,3.81,4.29,False,23.27,28.2,images/sampler/DDPM_20_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDPM,20,7.5,scaled_linear,3.86,4.29,False,24.82,26.5,images/sampler/DDPM_20_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDPM,20,7.5,scaled_linear,3.9,4.29,False,25.98,76.6,images/sampler/DDPM_20_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDPM,30,7.5,scaled_linear,5.73,4.29,False,30.19,69.9,images/sampler/DDPM_30_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDPM,30,7.5,scaled_linear,5.63,4.29,False,23.23,28.8,images/sampler/DDPM_30_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDPM,30,7.5,scaled_linear,5.54,4.29,False,21.51,37.0,images/sampler/DDPM_30_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDPM,30,7.5,scaled_linear,5.52,4.29,False,27.08,77.8,images/sampler/DDPM_30_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDPM,50,7.5,scaled_linear,8.93,4.29,False,28.15,71.1,images/sampler/DDPM_50_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDPM,50,7.5,scaled_linear,8.88,4.29,False,21.49,35.6,images/sampler/DDPM_50_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDPM,50,7.5,scaled_linear,8.89,4.29,False,25.51,37.3,images/sampler/DDPM_50_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDPM,50,7.5,scaled_linear,8.94,4.29,False,28.65,79.0,images/sampler/DDPM_50_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDIM,10,7.5,scaled_linear,1.99,4.29,False,27.89,57.3,images/sampler/DDIM_10_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,10,7.5,scaled_linear,1.99,4.29,False,24.2,27.9,images/sampler/DDIM_10_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,10,7.5,scaled_linear,1.99,4.29,False,23.83,14.6,images/sampler/DDIM_10_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,10,7.5,scaled_linear,1.99,4.29,False,28.55,53.9,images/sampler/DDIM_10_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDIM,20,7.5,scaled_linear,3.75,4.29,False,27.99,62.2,images/sampler/DDIM_20_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,20,7.5,scaled_linear,3.75,4.29,False,23.31,30.1,images/sampler/DDIM_20_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,20,7.5,scaled_linear,3.75,4.29,False,23.12,12.9,images/sampler/DDIM_20_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,20,7.5,scaled_linear,3.76,4.29,False,29.89,60.3,images/sampler/DDIM_20_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDIM,30,7.5,scaled_linear,5.51,4.29,False,27.45,62.9,images/sampler/DDIM_30_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,30,7.5,scaled_linear,5.56,4.29,False,23.16,30.9,images/sampler/DDIM_30_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,30,7.5,scaled_linear,5.53,4.29,False,23.36,13.6,images/sampler/DDIM_30_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,30,7.5,scaled_linear,5.53,4.29,False,29.32,59.4,images/sampler/DDIM_30_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DDIM,50,7.5,scaled_linear,9.02,4.29,False,27.93,65.2,images/sampler/DDIM_50_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,50,7.5,scaled_linear,9.02,4.29,False,24.85,32.7,images/sampler/DDIM_50_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,50,7.5,scaled_linear,9.03,4.29,False,24.33,15.1,images/sampler/DDIM_50_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,50,7.5,scaled_linear,9.02,4.29,False,30.18,62.1,images/sampler/DDIM_50_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,PNDM,10,7.5,scaled_linear,2.16,4.29,False,27.83,43.1,images/sampler/PNDM_10_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,10,7.5,scaled_linear,2.18,4.29,False,25.94,33.7,images/sampler/PNDM_10_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,10,7.5,scaled_linear,2.16,4.29,False,24.02,18.6,images/sampler/PNDM_10_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,10,7.5,scaled_linear,2.16,4.29,False,28.32,53.8,images/sampler/PNDM_10_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,PNDM,20,7.5,scaled_linear,3.89,4.29,False,26.67,57.3,images/sampler/PNDM_20_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,20,7.5,scaled_linear,3.92,4.29,False,24.93,34.5,images/sampler/PNDM_20_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,20,7.5,scaled_linear,3.9,4.29,False,24.75,14.6,images/sampler/PNDM_20_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,20,7.5,scaled_linear,3.91,4.29,False,30.0,60.4,images/sampler/PNDM_20_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,PNDM,30,7.5,scaled_linear,5.66,4.29,False,26.63,58.4,images/sampler/PNDM_30_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,30,7.5,scaled_linear,5.65,4.29,False,25.81,36.2,images/sampler/PNDM_30_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,30,7.5,scaled_linear,5.64,4.29,False,24.11,15.8,images/sampler/PNDM_30_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,30,7.5,scaled_linear,5.65,4.29,False,30.8,57.1,images/sampler/PNDM_30_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,PNDM,50,7.5,scaled_linear,9.12,4.29,False,25.51,62.1,images/sampler/PNDM_50_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,PNDM,50,7.5,scaled_linear,9.15,4.29,False,25.17,33.2,images/sampler/PNDM_50_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,PNDM,50,7.5,scaled_linear,9.13,4.29,False,24.43,17.7,images/sampler/PNDM_50_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,PNDM,50,7.5,scaled_linear,9.14,4.29,False,29.79,60.5,images/sampler/PNDM_50_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,Euler,10,7.5,scaled_linear,1.98,4.29,False,29.13,83.1,images/sampler/Euler_10_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,Euler,10,7.5,scaled_linear,1.98,4.29,False,23.68,34.9,images/sampler/Euler_10_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,Euler,10,7.5,scaled_linear,1.98,4.29,False,24.58,13.7,images/sampler/Euler_10_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,Euler,10,7.5,scaled_linear,1.99,4.29,False,29.71,70.2,images/sampler/Euler_10_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,Euler,20,7.5,scaled_linear,3.72,4.29,False,29.03,73.4,images/sampler/Euler_20_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,Euler,20,7.5,scaled_linear,3.73,4.29,False,22.96,32.8,images/sampler/Euler_20_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,Euler,20,7.5,scaled_linear,3.74,4.29,False,24.58,14.4,images/sampler/Euler_20_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,Euler,20,7.5,scaled_linear,3.73,4.29,False,29.18,68.2,images/sampler/Euler_20_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,Euler,30,7.5,scaled_linear,5.48,4.29,False,28.27,71.2,images/sampler/Euler_30_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,Euler,30,7.5,scaled_linear,5.5,4.29,False,23.7,33.1,images/sampler/Euler_30_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,Euler,30,7.5,scaled_linear,5.5,4.29,False,24.65,14.8,images/sampler/Euler_30_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,Euler,30,7.5,scaled_linear,5.5,4.29,False,30.01,67.3,images/sampler/Euler_30_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,Euler,50,7.5,scaled_linear,9.02,4.29,False,26.3,68.7,images/sampler/Euler_50_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,Euler,50,7.5,scaled_linear,9.04,4.29,False,24.61,33.4,images/sampler/Euler_50_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,Euler,50,7.5,scaled_linear,9.05,4.29,False,24.11,15.5,images/sampler/Euler_50_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,Euler,50,7.5,scaled_linear,9.04,4.29,False,29.92,65.5,images/sampler/Euler_50_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DPM-Solver++,10,7.5,scaled_linear,2.02,4.29,False,27.47,70.5,images/sampler/DPM-Solverpp_10_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM-Solver++,10,7.5,scaled_linear,2.01,4.29,False,23.25,37.1,images/sampler/DPM-Solverpp_10_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM-Solver++,10,7.5,scaled_linear,2.0,4.29,False,24.33,15.2,images/sampler/DPM-Solverpp_10_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM-Solver++,10,7.5,scaled_linear,2.0,4.29,False,30.28,69.7,images/sampler/DPM-Solverpp_10_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DPM-Solver++,20,7.5,scaled_linear,3.76,4.29,False,25.73,65.5,images/sampler/DPM-Solverpp_20_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM-Solver++,20,7.5,scaled_linear,3.77,4.29,False,24.38,33.9,images/sampler/DPM-Solverpp_20_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM-Solver++,20,7.5,scaled_linear,3.74,4.29,False,23.69,15.7,images/sampler/DPM-Solverpp_20_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM-Solver++,20,7.5,scaled_linear,3.74,4.29,False,29.63,64.9,images/sampler/DPM-Solverpp_20_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DPM-Solver++,30,7.5,scaled_linear,5.48,4.29,False,25.45,66.7,images/sampler/DPM-Solverpp_30_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM-Solver++,30,7.5,scaled_linear,5.49,4.29,False,26.07,34.1,images/sampler/DPM-Solverpp_30_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM-Solver++,30,7.5,scaled_linear,5.51,4.29,False,24.1,15.9,images/sampler/DPM-Solverpp_30_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM-Solver++,30,7.5,scaled_linear,5.51,4.29,False,29.64,63.1,images/sampler/DPM-Solverpp_30_10.jpg
+C_sampler,0,A tan dog running through the grass with the background blurry,42,DPM-Solver++,50,7.5,scaled_linear,9.02,4.29,False,25.72,65.7,images/sampler/DPM-Solverpp_50_00.jpg
+C_sampler,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM-Solver++,50,7.5,scaled_linear,9.09,4.29,False,25.07,33.2,images/sampler/DPM-Solverpp_50_02.jpg
+C_sampler,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM-Solver++,50,7.5,scaled_linear,9.06,4.29,False,24.26,17.4,images/sampler/DPM-Solverpp_50_06.jpg
+C_sampler,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM-Solver++,50,7.5,scaled_linear,9.06,4.29,False,29.39,62.6,images/sampler/DPM-Solverpp_50_10.jpg
+D_schedule,0,A tan dog running through the grass with the background blurry,42,DDIM,30,7.5,DDIM · scaled linear (trained),5.36,4.29,False,27.45,62.9,images/schedule/sched0_00.jpg
+D_schedule,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,30,7.5,DDIM · scaled linear (trained),5.42,4.29,False,23.16,30.9,images/schedule/sched0_02.jpg
+D_schedule,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,30,7.5,DDIM · scaled linear (trained),5.6,4.29,False,23.36,13.6,images/schedule/sched0_06.jpg
+D_schedule,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,30,7.5,DDIM · scaled linear (trained),5.74,4.29,False,29.32,59.4,images/schedule/sched0_10.jpg
+D_schedule,0,A tan dog running through the grass with the background blurry,42,DDIM,30,7.5,DDIM · linear,5.89,4.29,False,27.27,91.4,images/schedule/sched1_00.jpg
+D_schedule,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,30,7.5,DDIM · linear,5.85,4.29,False,24.04,33.8,images/schedule/sched1_02.jpg
+D_schedule,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,30,7.5,DDIM · linear,5.68,4.29,False,23.5,30.8,images/schedule/sched1_06.jpg
+D_schedule,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,30,7.5,DDIM · linear,5.54,4.29,False,29.07,61.6,images/schedule/sched1_10.jpg
+D_schedule,0,A tan dog running through the grass with the background blurry,42,DDIM,30,7.5,DDIM · cosine,5.45,4.29,False,28.28,81.1,images/schedule/sched2_00.jpg
+D_schedule,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DDIM,30,7.5,DDIM · cosine,5.39,4.29,False,20.83,28.6,images/schedule/sched2_02.jpg
+D_schedule,6,Five people on bikes in traffic with man watching from the side of the road,48,DDIM,30,7.5,DDIM · cosine,5.36,4.29,False,24.01,9.4,images/schedule/sched2_06.jpg
+D_schedule,10,Party goers at a rave dancing by a table with glow sticks on it,52,DDIM,30,7.5,DDIM · cosine,5.33,4.29,False,28.24,61.3,images/schedule/sched2_10.jpg
+D_schedule,0,A tan dog running through the grass with the background blurry,42,DPM++,20,7.5,DPM++ · default sigmas,3.63,4.29,False,25.73,65.5,images/schedule/sched3_00.jpg
+D_schedule,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM++,20,7.5,DPM++ · default sigmas,3.65,4.29,False,24.38,33.9,images/schedule/sched3_02.jpg
+D_schedule,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM++,20,7.5,DPM++ · default sigmas,3.65,4.29,False,23.69,15.7,images/schedule/sched3_06.jpg
+D_schedule,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM++,20,7.5,DPM++ · default sigmas,3.68,4.29,False,29.63,64.9,images/schedule/sched3_10.jpg
+D_schedule,0,A tan dog running through the grass with the background blurry,42,DPM++,20,7.5,DPM++ · Karras sigmas,3.69,4.29,False,25.54,64.4,images/schedule/sched4_00.jpg
+D_schedule,2,A man in a number ten jersey kicks a soccer ball while another team member watches,44,DPM++,20,7.5,DPM++ · Karras sigmas,3.72,4.29,False,23.32,32.3,images/schedule/sched4_02.jpg
+D_schedule,6,Five people on bikes in traffic with man watching from the side of the road,48,DPM++,20,7.5,DPM++ · Karras sigmas,3.74,4.29,False,24.6,16.6,images/schedule/sched4_06.jpg
+D_schedule,10,Party goers at a rave dancing by a table with glow sticks on it,52,DPM++,20,7.5,DPM++ · Karras sigmas,3.76,4.29,False,29.0,62.4,images/schedule/sched4_10.jpg

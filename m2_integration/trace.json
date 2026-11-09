@@ -1,0 +1,57 @@
+{
+  "prompt": "A tan dog running through the grass with the background blurry",
+  "tokens (real, incl. start/end)": 13,
+  "first tokens": [
+    "<|startoftext|>",
+    "a</w>",
+    "tan</w>",
+    "dog</w>",
+    "running</w>",
+    "through</w>",
+    "the</w>",
+    "grass</w>",
+    "with</w>",
+    "the</w>",
+    "background</w>",
+    "blurry</w>",
+    "<|endoftext|>"
+  ],
+  "token ids": [
+    1,
+    77
+  ],
+  "text embedding (cond)": [
+    1,
+    77,
+    768
+  ],
+  "empty-prompt embedding (uncond)": [
+    1,
+    77,
+    768
+  ],
+  "embedding fed to U-Net (uncond + cond, for guidance)": [
+    2,
+    77,
+    768
+  ],
+  "starting noise latent": [
+    1,
+    4,
+    64,
+    64
+  ],
+  "U-Net noise prediction": [
+    2,
+    4,
+    64,
+    64
+  ],
+  "VAE scale factor": 0.18215,
+  "final image": [
+    3,
+    512,
+    512
+  ],
+  "latent vs image size": "16384 numbers vs 786432 numbers (48x smaller)"
+}

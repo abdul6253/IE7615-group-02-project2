@@ -1,0 +1,186 @@
+{
+  "gpu": "Tesla T4",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "diffusers": "0.42.1",
+  "transformers": "5.22.0",
+  "sd_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "n_images": 202,
+  "images_per_part": {
+    "C_sampler": 80,
+    "B_guidance": 72,
+    "A_baseline": 30,
+    "D_schedule": 20
+  },
+  "safety_flagged": 0,
+  "peak_gpu_gb": 4.29,
+  "A_baseline": {
+    "mean_clip": 27.33,
+    "mean_seconds": 5.01,
+    "mean_pixel_diff_vs_milestone1": 0.0,
+    "per_prompt": {
+      "0": 27.08,
+      "1": 30.72,
+      "2": 24.78,
+      "3": 25.08,
+      "4": 26.28,
+      "5": 24.52,
+      "6": 24.56,
+      "7": 29.38,
+      "8": 25.69,
+      "9": 26.82,
+      "10": 29.34,
+      "11": 30.02,
+      "12": 30.88,
+      "13": 25.59,
+      "14": 29.2
+    }
+  },
+  "B_guidance": [
+    {
+      "guidance": 1.0,
+      "clip_score": 20.78,
+      "saturation": 30.68,
+      "seconds": 3.43,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 68.24
+    },
+    {
+      "guidance": 3.0,
+      "clip_score": 24.83,
+      "saturation": 34.22,
+      "seconds": 5.7,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 81.32
+    },
+    {
+      "guidance": 5.0,
+      "clip_score": 25.82,
+      "saturation": 39.89,
+      "seconds": 5.68,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 84.84
+    },
+    {
+      "guidance": 7.5,
+      "clip_score": 25.97,
+      "saturation": 46.39,
+      "seconds": 5.64,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 86.62
+    },
+    {
+      "guidance": 10.0,
+      "clip_score": 25.64,
+      "saturation": 50.77,
+      "seconds": 5.64,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 87.3
+    },
+    {
+      "guidance": 15.0,
+      "clip_score": 25.87,
+      "saturation": 57.51,
+      "seconds": 5.65,
+      "peak_gpu_gb": 4.29,
+      "seed_similarity": 89.64
+    }
+  ],
+  "C_sampler_clip": {
+    "DDPM": {
+      "10": 27.38,
+      "20": 25.59,
+      "30": 25.5,
+      "50": 25.95
+    },
+    "DDIM": {
+      "10": 26.12,
+      "20": 26.08,
+      "30": 25.82,
+      "50": 26.82
+    },
+    "PNDM": {
+      "10": 26.53,
+      "20": 26.59,
+      "30": 26.84,
+      "50": 26.22
+    },
+    "Euler": {
+      "10": 26.78,
+      "20": 26.44,
+      "30": 26.66,
+      "50": 26.24
+    },
+    "DPM-Solver++": {
+      "10": 26.33,
+      "20": 25.86,
+      "30": 26.32,
+      "50": 26.11
+    }
+  },
+  "C_sampler_seconds": {
+    "DDPM": {
+      "10": 1.98,
+      "20": 3.83,
+      "30": 5.6,
+      "50": 8.91
+    },
+    "DDIM": {
+      "10": 1.99,
+      "20": 3.75,
+      "30": 5.53,
+      "50": 9.02
+    },
+    "PNDM": {
+      "10": 2.16,
+      "20": 3.9,
+      "30": 5.65,
+      "50": 9.14
+    },
+    "Euler": {
+      "10": 1.98,
+      "20": 3.73,
+      "30": 5.5,
+      "50": 9.04
+    },
+    "DPM-Solver++": {
+      "10": 2.01,
+      "20": 3.75,
+      "30": 5.5,
+      "50": 9.06
+    }
+  },
+  "D_schedule": [
+    {
+      "schedule": "DDIM \u00b7 scaled linear (trained)",
+      "clip_score": 25.82,
+      "saturation": 41.7,
+      "seconds": 5.53
+    },
+    {
+      "schedule": "DDIM \u00b7 linear",
+      "clip_score": 25.97,
+      "saturation": 54.4,
+      "seconds": 5.74
+    },
+    {
+      "schedule": "DDIM \u00b7 cosine",
+      "clip_score": 25.34,
+      "saturation": 45.1,
+      "seconds": 5.38
+    },
+    {
+      "schedule": "DPM++ \u00b7 default sigmas",
+      "clip_score": 25.86,
+      "saturation": 45.0,
+      "seconds": 3.65
+    },
+    {
+      "schedule": "DPM++ \u00b7 Karras sigmas",
+      "clip_score": 25.62,
+      "saturation": 43.92,
+      "seconds": 3.73
+    }
+  ],
+  "total_minutes": 20.9
+}

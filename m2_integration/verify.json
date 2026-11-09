@@ -1,0 +1,9 @@
+{
+  "prompt": "A tan dog running through the grass with the background blurry",
+  "seed": 42,
+  "mean_pixel_diff_ours_vs_pipeline (0-255)": 0.0,
+  "seconds_pipeline": 4.62,
+  "seconds_ours_with_diagnostics": 5.78,
+  "peak_gpu_gb": 2.81,
+  "mean_pixel_diff_ours_vs_milestone1 (0-255)": 0.0
+}

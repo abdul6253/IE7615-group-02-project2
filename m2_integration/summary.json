@@ -1,0 +1,149 @@
+{
+  "gpu": "Tesla T4",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "diffusers": "0.42.1",
+  "transformers": "5.22.0",
+  "sd_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "bert_model": "bert-base-uncased",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 42,
+  "parts": [
+    {
+      "part": "CLIP tokenizer",
+      "job": "text -> 77 token ids",
+      "params_M": 0.0
+    },
+    {
+      "part": "CLIP text encoder (ViT-L/14)",
+      "job": "token ids -> 77 x 768 embedding",
+      "params_M": 123.1
+    },
+    {
+      "part": "U-Net",
+      "job": "removes noise; reads text by cross-attention",
+      "params_M": 859.5
+    },
+    {
+      "part": "VAE",
+      "job": "latent 4x64x64 <-> image 3x512x512",
+      "params_M": 83.7
+    },
+    {
+      "part": "PNDM scheduler",
+      "job": "noise level at each step",
+      "params_M": 0.0
+    }
+  ],
+  "trace": {
+    "prompt": "A tan dog running through the grass with the background blurry",
+    "tokens (real, incl. start/end)": 13,
+    "first tokens": [
+      "<|startoftext|>",
+      "a</w>",
+      "tan</w>",
+      "dog</w>",
+      "running</w>",
+      "through</w>",
+      "the</w>",
+      "grass</w>",
+      "with</w>",
+      "the</w>",
+      "background</w>",
+      "blurry</w>",
+      "<|endoftext|>"
+    ],
+    "token ids": [
+      1,
+      77
+    ],
+    "text embedding (cond)": [
+      1,
+      77,
+      768
+    ],
+    "empty-prompt embedding (uncond)": [
+      1,
+      77,
+      768
+    ],
+    "embedding fed to U-Net (uncond + cond, for guidance)": [
+      2,
+      77,
+      768
+    ],
+    "starting noise latent": [
+      1,
+      4,
+      64,
+      64
+    ],
+    "U-Net noise prediction": [
+      2,
+      4,
+      64,
+      64
+    ],
+    "VAE scale factor": 0.18215,
+    "final image": [
+      3,
+      512,
+      512
+    ],
+    "latent vs image size": "16384 numbers vs 786432 numbers (48x smaller)"
+  },
+  "verify": {
+    "prompt": "A tan dog running through the grass with the background blurry",
+    "seed": 42,
+    "mean_pixel_diff_ours_vs_pipeline (0-255)": 0.0,
+    "seconds_pipeline": 4.62,
+    "seconds_ours_with_diagnostics": 5.78,
+    "peak_gpu_gb": 2.81,
+    "mean_pixel_diff_ours_vs_milestone1 (0-255)": 0.0
+  },
+  "conditioning_check": {
+    "seed": 42,
+    "prompt_ids": [
+      0,
+      1,
+      3,
+      10,
+      12,
+      14
+    ],
+    "images_matching_own_prompt_best": "6 of 6",
+    "mean_clip_matched": 27.37,
+    "mean_clip_mismatched": 7.82,
+    "mean_clip_empty_prompt_image": 11.31
+  },
+  "adapter": {
+    "params_M": 17.0,
+    "epochs": 15,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "train_captions": 7613,
+    "val_captions": 200,
+    "feature_seconds": 29.6,
+    "train_seconds": 307.1,
+    "best_epoch": 12,
+    "best_val_loss": 0.5166,
+    "always_average_val_loss": 1.0046,
+    "final": {
+      "epoch": 15,
+      "train_loss": 0.33726,
+      "val_loss": 0.517,
+      "val_token_cosine": 0.7847,
+      "epoch_seconds": 20.7,
+      "peak_gpu_gb": 6.35
+    },
+    "peak_gpu_gb_training": 6.35
+  },
+  "encoder_comparison_mean_clip": {
+    "CLIP": 28.78,
+    "raw BERT": 9.88,
+    "BERT + adapter": 21.4
+  },
+  "model_load_seconds": 57.8,
+  "total_minutes": 10.3
+}

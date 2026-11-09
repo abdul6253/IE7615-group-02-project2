@@ -1,0 +1,19 @@
+encoder,prompt_id,prompt,seed,seconds,clip_score,file
+CLIP,0,A tan dog running through the grass with the background blurry,42,5.01,26.63,encoder_clip_00.png
+CLIP,1,A dog with golden fur is chest deep in water,43,4.97,29.64,encoder_clip_01.png
+CLIP,3,A person jumping their bike in the woods in front of trees with no leaves,45,4.93,25.78,encoder_clip_03.png
+CLIP,10,Party goers at a rave dancing by a table with glow sticks on it,52,4.99,30.8,encoder_clip_10.png
+CLIP,12,A group of people ride a blue roller coaster on its way down from a turn,54,4.96,31.29,encoder_clip_12.png
+CLIP,14,One man in the back of a truck working on a farm with animals in the background,56,5.0,28.54,encoder_clip_14.png
+raw BERT,0,A tan dog running through the grass with the background blurry,42,4.94,10.34,encoder_raw_bert_00.png
+raw BERT,1,A dog with golden fur is chest deep in water,43,4.95,2.2,encoder_raw_bert_01.png
+raw BERT,3,A person jumping their bike in the woods in front of trees with no leaves,45,4.94,18.14,encoder_raw_bert_03.png
+raw BERT,10,Party goers at a rave dancing by a table with glow sticks on it,52,4.95,12.49,encoder_raw_bert_10.png
+raw BERT,12,A group of people ride a blue roller coaster on its way down from a turn,54,5.03,5.09,encoder_raw_bert_12.png
+raw BERT,14,One man in the back of a truck working on a farm with animals in the background,56,4.97,11.0,encoder_raw_bert_14.png
+BERT + adapter,0,A tan dog running through the grass with the background blurry,42,4.99,22.71,encoder_bert_adapter_00.png
+BERT + adapter,1,A dog with golden fur is chest deep in water,43,4.98,23.14,encoder_bert_adapter_01.png
+BERT + adapter,3,A person jumping their bike in the woods in front of trees with no leaves,45,4.94,24.0,encoder_bert_adapter_03.png
+BERT + adapter,10,Party goers at a rave dancing by a table with glow sticks on it,52,5.0,15.05,encoder_bert_adapter_10.png
+BERT + adapter,12,A group of people ride a blue roller coaster on its way down from a turn,54,4.98,21.83,encoder_bert_adapter_12.png
+BERT + adapter,14,One man in the back of a truck working on a farm with animals in the background,56,4.98,21.68,encoder_bert_adapter_14.png

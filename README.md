@@ -26,6 +26,31 @@ A text-to-image pipeline that turns a caption into a 512×512 image: a Transform
 | Mean CLIP score, generated vs. real photos (15 test captions) | 27.0 vs. 24.4 |
 | Generation time per image (Colab T4) | 4.9 s |
 
+## Milestone 2 deliverables (Model integration and baseline results)
+
+| Deliverable | Where |
+|---|---|
+| Milestone 2 report (front page + 6 pages) | `docs/Project2_M2_Report.pdf` |
+| Integration write-up (architecture, text → embedding → conditioning → image) | `docs/Project2_M2_Integration_Writeup.pdf` |
+| Generated samples gallery (baseline, guidance, sampler, noise schedule) | `docs/Project2_M2_Samples_Gallery.pdf` |
+| Training logs and summary | `docs/Project2_M2_Training_Logs_Summary.pdf` |
+| Integration + training notebook | `notebooks/04_integration_training.ipynb` |
+| Conditional generation + parameter sweeps notebook | `notebooks/05_conditional_generation_sweeps.ipynb` |
+| Integration outputs and logs (loss curves, diagnostics, checks) | `m2_integration/` |
+| Generation outputs (202 images, `results.csv` with prompt, seed and settings per image) | `m2_generation/` |
+
+## Milestone 2 results
+
+| Result | Value |
+|---|---|
+| Our own denoising loop vs. the official pipeline (same prompt and seed) | identical (mean pixel difference 0.0) |
+| Same seed, 6 different captions: images matching their own caption best | 6 of 6 (CLIP 27.4 right vs. 7.8 wrong) |
+| BERT → CLIP adapter (17M parameters, 15 epochs, 5.1 min, 6.35 GB) | validation loss 0.52 (average-only reference 1.00) |
+| Mean CLIP score: CLIP / raw BERT / BERT + adapter | 28.8 / 9.9 / 21.4 |
+| Baseline (15 test prompts × 2 seeds) | mean CLIP 27.3, 5.0 s per image |
+| Guidance scale 1 / 3 / 5 / 7.5 / 10 / 15 (mean CLIP) | 20.8 / 24.8 / 25.8 / 26.0 / 25.6 / 25.9 |
+| Fastest sampler with the same look as the baseline | DPM-Solver++, 20 steps (3.8 s vs. 5.7 s) |
+
 ## Repository structure
 
 ```
@@ -33,14 +58,18 @@ A text-to-image pipeline that turns a caption into a 512×512 image: a Transform
 ├── notebooks/
 │   ├── 01_dataset_preparation.ipynb     # Flickr30k → 2,000 clean 512×512 pairs
 │   ├── 02_clip_embeddings.ipynb         # environment check, CLIP tokenization + embeddings
-│   └── 03_baseline_sd_generation.ipynb  # SD 1.5 baseline, gallery, CLIP scores, diversity test
+│   ├── 03_baseline_sd_generation.ipynb  # SD 1.5 baseline, gallery, CLIP scores, diversity test
+│   ├── 04_integration_training.ipynb    # M2: own text->embedding->U-Net->image loop, checks, BERT adapter training
+│   └── 05_conditional_generation_sweeps.ipynb  # M2: baseline prompts, guidance / sampler / noise-schedule sweeps
 ├── data/flickr30k_subset/
 │   ├── metadata.csv                     # filename, caption, split, alternates, original size
 │   ├── dataset_config.json              # every setting + cleaning counts
 │   └── sample_pairs.png
 ├── embeddings/                          # CLIP retrieval results and figures
 ├── baseline_gallery/                    # generated images, gallery pages, results.csv, summary.json
-├── docs/                                # report, proposal, dataset memo, gallery memo (PDF)
+├── m2_integration/                      # M2 checks, sampler diagnostics, adapter loss logs, encoder comparison
+├── m2_generation/                       # M2 202 images (JPEG copies), results.csv, summary.json, grids
+├── docs/                                # M1 and M2 reports, memos, write-up, gallery, training summary (PDF)
 └── requirements.txt                     # package versions used for the reported results
 ```
 
@@ -69,8 +98,12 @@ Versions used for the reported results: Python 3.13, PyTorch 2.11, Transformers 
 | 1 | `01_dataset_preparation` | no | ~10 min | `data/flickr30k_subset/` + `flickr30k_subset.zip` |
 | 2 | `02_clip_embeddings` | T4 | ~10 min | `embeddings/`, `requirements.txt` |
 | 3 | `03_baseline_sd_generation` | T4 | ~15 min | `baseline_gallery/` |
+| 4 | `04_integration_training` | T4 | ~11 min | `m2_integration/` + `m2_integration.zip` |
+| 5 | `05_conditional_generation_sweeps` | T4 | ~21 min | `m2_generation/` + `m2_generation.zip` |
 
-Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in the Colab file panel they unzip it; if not, they rebuild the same 2,000 pairs from Hugging Face (about 5 minutes). Their data cell prints a **check code**; `477c680542` means the dataset is identical to the one used in our report.
+Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in the Colab file panel they unzip it; if not, they rebuild the same 2,000 pairs from Hugging Face (about 5 minutes). Their data cell prints a **check code**; `477c680542` means the dataset is identical to the one used in our report. Notebooks 04 and 05 only need the captions, so if there is no zip they download `metadata.csv` from this repository (no rebuild). Milestone 2 results were made with Diffusers 0.42.1 and Transformers 5.22. The 202 images in `m2_generation/` are stored as JPEG copies (quality 90) to keep the repository small; the notebook saves PNG.
+
+**Milestone 2 sweeps:** guidance 1, 3, 5, 7.5, 10, 15 · samplers DDPM, DDIM, PNDM, Euler, DPM-Solver++ × 10, 20, 30, 50 steps · noise schedules scaled linear, linear, cosine (DDIM) and default vs. Karras sigmas (DPM-Solver++) · seed 42 + prompt id.
 
 **Fixed settings for the baseline:** seed 42 · 2,000 pairs (1,600 / 200 / 200) · 512×512 · CLIP `openai/clip-vit-large-patch14` · Stable Diffusion `stable-diffusion-v1-5/stable-diffusion-v1-5` · PNDM scheduler · 30 steps · guidance scale 7.5 · 15 prompts from the test split, seed 42 + prompt index.
 
@@ -84,7 +117,7 @@ Notebooks 02 and 03 do **not** need an upload: if `flickr30k_subset.zip` is in t
 
 | Member | Role | Contribution and responsibility |
 |---|---|---|
-| Abdellah Faleh | Technical lead | Built the three notebooks (data, CLIP, first images), ran them in Colab, and wrote the proposal, dataset memo, gallery memo and report; connects the text encoder in Milestone 2 |
+| Abdellah Faleh | Technical lead | Built the three notebooks (data, CLIP, first images), ran them in Colab, and wrote the proposal, dataset memo, gallery memo and report; in Milestone 2 built and ran notebooks 04–05 (integration, adapter training, sweeps) and wrote the M2 documents |
 | Jin-Woo Hong | Experiments | Reran the notebooks to check the baseline and added the recommendation to the evaluation review; leads the guidance scale, scheduler and step-count tests in Milestones 2 and 3 |
 | Samuel Tong | Evaluation | Reran notebooks 02 and 03 in Colab to check they reproduce, and wrote the Milestone 1 evaluation review (`docs/m1_baseline_evaluation_review.md`); leads FID, Inception Score and CLIP score evaluation in Milestone 3 |
 | Tristan Lyons | Documentation | Keeps the GitHub repository organized, submits on Canvas, and is the main contact with the teaching staff |

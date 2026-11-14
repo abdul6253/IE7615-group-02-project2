@@ -39,6 +39,7 @@ A text-to-image pipeline that turns a caption into a 512×512 image: a Transform
 | Stable Diffusion LoRA fine-tuning notebook | `notebooks/04_sd_lora_finetuning.ipynb` |
 | LoRA training loop and prompt-conditioning evaluation | `scripts/train_sd_lora.py`, `scripts/evaluate_sd_conditioning.py` |
 | LoRA integration notes (architecture, training objective) | `docs/m2_integration_architecture.md` |
+| Milestone 2 evaluation review (Samuel) | `docs/m2_evaluation_review.md` |
 | Integration outputs and logs (loss curves, diagnostics, checks) | `m2_integration/` |
 | Generation outputs (202 images, `results.csv` with prompt, seed and settings per image) | `m2_generation/` |
 
@@ -130,5 +131,5 @@ Notebook `04_sd_lora_finetuning` trains on the photos themselves, so it needs `d
 |---|---|---|
 | Abdellah Faleh | Technical lead | Built the three notebooks (data, CLIP, first images), ran them in Colab, and wrote the proposal, dataset memo, gallery memo and report; in Milestone 2 built and ran notebooks 04–05 (integration, adapter training, sweeps) and wrote the M2 documents |
 | Jin-Woo Hong | Experiments | Reran the notebooks to check the baseline and added the recommendation to the evaluation review; in Milestone 2 built and ran the LoRA fine-tuning of the U-Net (notebook 04_sd_lora_finetuning, training and evaluation scripts) and updated notebook 03 to pass explicit CLIP embeddings; leads the parameter-sensitivity study in Milestone 3 |
-| Samuel Tong | Evaluation | Reran notebooks 02 and 03 in Colab to check they reproduce, and wrote the Milestone 1 evaluation review (`docs/m1_baseline_evaluation_review.md`); leads FID, Inception Score and CLIP score evaluation in Milestone 3 |
+| Samuel Tong | Evaluation | Reran notebooks 02 and 03 in Colab to check they reproduce, and wrote the Milestone 1 evaluation review (`docs/m1_baseline_evaluation_review.md`); in Milestone 2 reviewed the guidance, sampler and text-encoder results and proposed the Milestone 3 evaluation plan (`docs/m2_evaluation_review.md`); leads FID, Inception Score and CLIP score evaluation in Milestone 3 |
 | Tristan Lyons | Documentation | Keeps the GitHub repository organized, submits on Canvas, and is the main contact with the teaching staff |
